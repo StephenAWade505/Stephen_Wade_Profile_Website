@@ -1,101 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stephen Wade | Salesforce Developer & Project Leader</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Stephen Wade</h1>
-    <p>Salesforce Developer and Project Leader</p>
+  <!-- Sticky Top Nav -->
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">SW</a>
+      <div class="links">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#employment">Employment</a>
+        <a href="#education">Education</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero band">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Stephen Wade</h1>
+        <h2>Salesforce Developer & Project Leader</h2>
+        <p>
+          A Salesforce Developer with one of Salesforce’s largest global partners,
+          I’m passionate about respectful interpersonal communication and tackling
+          complex problem-solving challenges. I approach tasks with an informed
+          interdisciplinary perspective and have honed discernment skills in the
+          fast-paced corporate tech environment. Proficient in clear and effective
+          client-side communication, I thrive on knowledge acquisition and view
+          successful leadership as enabling others to flourish. Believing in the
+          importance of continual skill development, I prioritize growth and
+          adaptability as essential elements of personal and professional evolution.
+        </p>
+
+        <!-- Highlights -->
+        <div class="highlights">
+          <div class="highlight"><span>2+</span><label>Years Salesforce</label></div>
+          <div class="highlight"><span>3</span><label>SFDC Certs</label></div>
+          <div class="highlight"><span>CI/CD</span><label>Gearset Pipelines</label></div>
+          <div class="highlight"><span>HELMS</span><label>Flagship Project</label></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="me.jpg" alt="Stephen Wade Profile Picture">
+      </div>
+    </div>
   </header>
 
-  <section id="summary">
-    <h2>Professional Summary</h2>
-    <div class="card">
+  <!-- SKILLS -->
+  <section id="skills" class="band band-alt">
+    <h2>Technical Expertise</h2>
+    <div class="skills-grid reveal">
+      <div class="skill-card">Apex</div>
+      <div class="skill-card">LWC</div>
+      <div class="skill-card">Aura</div>
+      <div class="skill-card">OmniStudio</div>
+      <div class="skill-card">Gearset</div>
+      <div class="skill-card">GitHub</div>
+      <div class="skill-card">SLDS</div>
+      <div class="skill-card">SOQL</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">TypeScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Redux</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Express</div>
+      <div class="skill-card">REST/SOAP APIs</div>
+      <div class="skill-card">MuleSoft</div>
+      <div class="skill-card">DataLoader</div>
+      <div class="skill-card">DBAmp</div>
+      <div class="skill-card">Salesforce Inspector</div>
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">Bootstrap</div>
+      <div class="skill-card">jQuery</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">PostgreSQL</div>
+      <div class="skill-card">WordPress</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (HELMS) -->
+  <section id="experience" class="band">
+    <h2>Experience</h2>
+    <div class="card project-card reveal">
+      <div class="project-header">
+        <img src="WADOH_Small_Logo.png" alt="Washington Department of Health Logo" class="project-logo">
+        <div>
+          <h3>Washington Department of Health</h3>
+          <p>Healthcare Enforcement and Licensing Management System (HELMS)</p>
+        </div>
+      </div>
       <p>
-        A Salesforce Developer with one of Salesforce’s largest global partners, I’m passionate about respectful interpersonal communication and tackling complex problem-solving challenges. I approach tasks with an informed interdisciplinary perspective and have honed discernment skills in the fast-paced corporate tech environment. Proficient in clear and effective client-side communication, I thrive on knowledge acquisition and view successful leadership as enabling others to flourish. Believing in the importance of continual skill development, I prioritize growth and adaptability as essential elements of personal and professional evolution.
+        Senior/Lead Developer – MTX Group Inc.
+        Taking a lead role for WA HELMS, I oversee development tasks, provide guidance,
+        and act as client-side dev liaison.
+        <a href="https://doh.wa.gov/licenses-permits-and-certificates/healthcare-enforcement-and-licensing-management-system-helms" target="_blank" rel="noopener">
+          View Project →
+        </a>
       </p>
     </div>
   </section>
 
- <section id="skills">
-  <h2>Technical Expertise</h2>
-  <div class="skills-grid">
-    <div class="skill-card">Apex</div>
-    <div class="skill-card">LWC</div>
-    <div class="skill-card">Aura</div>
-    <div class="skill-card">OmniStudio</div>
-    <div class="skill-card">Gearset</div>
-    <div class="skill-card">GitHub</div>
-    <div class="skill-card">SLDS</div>
-    <div class="skill-card">SOQL</div>
-    <div class="skill-card">SQL</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">TypeScript</div>
-    <div class="skill-card">React</div>
-    <div class="skill-card">Redux</div>
-    <div class="skill-card">Python</div>
-    <div class="skill-card">Node.js</div>
-    <div class="skill-card">Express</div>
-    <div class="skill-card">REST/SOAP APIs</div>
-    <div class="skill-card">MuleSoft</div>
-    <div class="skill-card">DataLoader</div>
-    <div class="skill-card">DBAmp</div>
-    <div class="skill-card">Salesforce Inspector</div>
-    <div class="skill-card">HTML5</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">Bootstrap</div>
-    <div class="skill-card">jQuery</div>
-    <div class="skill-card">MySQL</div>
-    <div class="skill-card">PostgreSQL</div>
-    <div class="skill-card">WordPress</div>
-  </div>
-</section>
-
-  <section id="experience">
-    <h2>Project Experience</h2>
-    <div class="card">
-      <h3>Washington Department of Health | WA HELMS</h3>
-      <p><em>Aug 2023 – Present</em></p>
-      <ul>
-        <li><b>Senior/Lead Developer</b> – Lead onshore development, client liaison, sprint planning, and architecture guidance.</li>
-        <li><b>Software Engineer</b> – Implemented Apex & LWC solutions, awarded Above & Beyond Award.</li>
-        <li><b>Lead Onshore DevOps Engineer</b> – Managed CI/CD with Gearset, GitHub versioning, deployments.</li>
-        <li><b>Data Migration Liaison</b> – Coordinated migration requirements, unblocked Dev/BA teams.</li>
-        <li><b>Data Migration Developer</b> – Led data loads with MuleSoft, DataLoader, Salesforce Inspector, wrote automation for migration process.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="employment">
+  <!-- EMPLOYMENT (Timeline) -->
+  <section id="employment" class="band band-alt">
     <h2>Employment History</h2>
-    <div class="card">
-      <h3>Salesforce Developer / Technical Lead | MTX Group, Inc.</h3>
-      <p><em>May 2023 – Present</em></p>
-      <p>Custom Apex & LWC development, metadata configuration, client collaboration, sprint delivery.</p>
-    </div>
+    <div class="timeline">
 
-    <div class="card">
-      <h3>Software Developer | Contract</h3>
-      <p><em>May 2022 – May 2023</em></p>
-      <p>Designed websites with React, SEO optimization, hosting setup, mobile-first design.</p>
-      <p>Provided bespoke solutions for a bookstore and a pharmacy consultancy firm.</p>
-    </div>
+      <div class="t-item card job-card reveal">
+        <div class="job-header">
+          <img src="MTXLogo.png" alt="MTX Group Logo" class="job-logo">
+          <div>
+            <h3>Salesforce Developer / Technical Lead | MTX Group, Inc.</h3>
+            <p><em>May 2023 – Present</em></p>
+          </div>
+        </div>
+        <p>Custom Apex & LWC development, metadata configuration, client collaboration, sprint delivery.</p>
+      </div>
 
-    <div class="card">
-      <h3>Post-Secondary Academic Instructor | Varsity Tutors</h3>
-      <p><em>Jan 2020 – May 2023</em></p>
-      <p>Taught philosophy, English, theology. Provided lectures, thesis support, research skills.</p>
+      <div class="t-item card job-card reveal">
+        <div class="job-header">
+          <img src="ReactLogo.png" alt="React Logo" class="job-logo">
+          <div>
+            <h3>Software Developer | Contract</h3>
+            <p><em>May 2022 – May 2023</em></p>
+          </div>
+        </div>
+        <p>Designed websites with React, SEO optimization, hosting setup, mobile-first design.
+        Provided bespoke solutions for a bookstore and a pharmacy consultancy firm.</p>
+      </div>
+
+      <div class="t-item card job-card reveal">
+        <div class="job-header">
+          <img src="VarsityLogo.png" alt="Varsity Tutors Logo" class="job-logo">
+          <div>
+            <h3>Post-Secondary Academic Instructor | Varsity Tutors</h3>
+            <p><em>Jan 2020 – May 2023</em></p>
+          </div>
+        </div>
+        <p>Taught philosophy, English, theology. Provided lectures, thesis support, and research skills.</p>
+      </div>
+
     </div>
   </section>
 
-  <section id="education">
+  <!-- EDUCATION -->
+  <section id="education" class="band">
     <h2>Education & Certifications</h2>
-    <div class="card">
+    <div class="card reveal">
       <ul>
         <li><b>MA, Systematic Theology</b> – Trinity International University, 2020</li>
         <li><b>BA, Philosophy & Religious Studies</b> – University of New Mexico, 2017</li>
@@ -107,6 +172,19 @@
         <li>Salesforce Certified Platform App Builder</li>
         <li>Salesforce Certified Platform Developer I</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="band band-alt">
+    <h2>Let’s Connect</h2>
+    <div class="card contact-card reveal">
+      <p>I’m open to Salesforce development, technical leadership, and data migration engagements.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="mailto:youremail@example.com">Email Me</a>
+        <a class="btn-ghost" href="Stephen_Wade_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        <a class="btn-ghost" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </section>
 
