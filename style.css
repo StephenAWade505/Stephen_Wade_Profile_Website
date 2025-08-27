@@ -101,7 +101,7 @@ section{ max-width: var(--max-w); margin: 0 auto; }
 .topnav .links a:not(.btn):focus{
   color: var(--brand);
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Active link (set by scroll spy) */
