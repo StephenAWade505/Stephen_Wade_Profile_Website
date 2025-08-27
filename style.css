@@ -48,31 +48,123 @@ section{ max-width: var(--max-w); margin: 0 auto; }
    Top Navigation
    ========================================================= */
 .topnav{
-  position: sticky; top: 0; z-index: 50;
-  backdrop-filter: saturate(1.2) blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  /* fallback background */
+  background: rgba(255,255,255,0.8);
+  /* modern background */
   background: color-mix(in srgb, var(--paper) 70%, transparent);
+  -webkit-backdrop-filter: saturate(1.2) blur(8px); /* Safari */
+  backdrop-filter: saturate(1.2) blur(8px);
   box-shadow: 0 1px 0 rgba(0,0,0,.06);
 }
+
 .nav-inner{
   max-width: var(--max-w);
   margin: 0 auto;
   padding: .6rem var(--space-2);
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .brand{
-  font-family: "DM Sans", sans-serif; font-weight: 700; letter-spacing:.5px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing:.5px;
   background: linear-gradient(135deg,var(--brand),#46b1ff);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 1.25rem;
 }
-.topnav .links{ display:flex; gap: 1rem; align-items:center; }
-.topnav a{ color: var(--ink); text-decoration:none; font-weight:500; opacity:.9; }
-.topnav a:hover, .topnav a:focus{ color: var(--brand); outline: none; }
-.topnav .btn{
-  padding:.5rem .9rem; border-radius: 999px; border:1px solid var(--brand);
-  color: var(--brand);
+
+.topnav .links{
+  display:flex;
+  gap: 1rem;
+  align-items:center;
 }
-.topnav .btn:hover{ background: var(--brand); color: white; }
+
+/* Base nav links */
+.topnav .links a{
+  color: var(--ink);
+  text-decoration:none;
+  font-weight:500;
+  opacity:.9;
+  position: relative;
+  padding-bottom: 2px; /* room for underline */
+}
+
+/* Hover/focus for regular links ONLY (exclude .btn) */
+.topnav .links a:not(.btn):hover,
+.topnav .links a:not(.btn):focus{
+  color: var(--brand);
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Active link (set by scroll spy) */
+.topnav .links a.active {
+  color: var(--brand);
+  font-weight: 600;
+}
+
+/* Underline animation for regular links ONLY (exclude .btn) */
+.topnav .links a:not(.btn)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: var(--brand);
+  border-radius: 2px;
+  transition: width 180ms ease;
+}
+.topnav .links a:not(.btn):hover::after,
+.topnav .links a:not(.btn).active::after {
+  width: 100%;
+}
+
+/* Focus-visible for keyboard users */
+.topnav .links a:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Button style in nav (outline by default; filled on hover) */
+.topnav .btn {
+  display: inline-block;             /* treat like a real button */
+  padding: 0.1rem 1rem;             /* balanced vertical padding */
+  line-height: 1.2;                  /* keep text vertically centered */
+  border-radius: 999px;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  font-weight: 600;
+  vertical-align: middle;            /* centers text baseline better */
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Override hover/focus for button: fill blue, white text, no underline */
+.topnav .btn:hover,
+.topnav .btn:focus {
+  background: var(--brand);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Small-screen spacing */
+@media (max-width: 640px) {
+  .topnav .links { gap: .6rem; }
+  .nav-inner { padding: .6rem .75rem; }
+}
+
+
+/* Offset section scroll for sticky nav (auto via JS) */
+section { scroll-margin-top: var(--nav-h, 75px); }
+
 
 /* =========================================================
    Section Bands
@@ -217,6 +309,7 @@ li{ margin-bottom: .4rem; }
   border:1px solid var(--brand); color: var(--brand); padding:.7rem 1rem; border-radius:10px; font-weight:600;
 }
 .btn-ghost:hover{ background: var(--brand); color:#fff; }
+
 
 /* =========================================================
    Footer
