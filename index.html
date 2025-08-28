@@ -21,6 +21,7 @@
         <a href="#experience">Experience</a>
         <a href="#employment">Employment</a>
         <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
         <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
@@ -157,26 +158,68 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
+  <!-- EDUCATION (NEW — timeline with logos, matches Employment) -->
   <section id="education" class="band">
-    <h2>Education & Certifications</h2>
-    <div class="card reveal">
-      <ul>
-        <li><b>MA, Systematic Theology</b> – Trinity International University, 2020</li>
-        <li><b>BA, Philosophy & Religious Studies</b> – University of New Mexico, 2017</li>
-        <li><b>Full Stack Web Development Certificate</b> – Central New Mexico Community College, 2022</li>
-      </ul>
-      <p><b>Certifications:</b></p>
-      <ul>
-        <li>Salesforce Certified Administrator</li>
-        <li>Salesforce Certified Platform App Builder</li>
-        <li>Salesforce Certified Platform Developer I</li>
-      </ul>
+    <h2>Education</h2>
+    <div class="timeline">
+
+      <div class="t-item card edu-card reveal">
+        <div class="edu-header">
+          <img src="TIULogo.jpg" alt="Trinity International University logo" class="edu-logo">
+          <div>
+            <h3>Trinity International University</h3>
+            <p><em>MA, Systematic Theology — 2020</em></p>
+          </div>
+        </div>
+        <p>Advanced study in systematic theology; emphasis on research, analytical writing, and pedagogy.</p>
+      </div>
+
+      <div class="t-item card edu-card reveal">
+        <div class="edu-header">
+          <img src="UNMLogo.jpg" alt="University of New Mexico logo" class="edu-logo">
+          <div>
+            <h3>University of New Mexico</h3>
+            <p><em>BA, Philosophy & Religious Studies — 2017</em></p>
+          </div>
+        </div>
+        <p>Undergraduate focus on logic, ethics, and critical analysis; strong foundation in clear communication.</p>
+      </div>
+
+      <div class="t-item card edu-card reveal">
+        <div class="edu-header">
+          <img src="CNMLogo.jpeg" alt="CNM Deep Dive logo" class="edu-logo">
+          <div>
+            <h3>CNM Deep Dive</h3>
+            <p><em>Full Stack Web Development Certificate — 2022</em></p>
+          </div>
+        </div>
+        <p>Modern JavaScript, React, Node, databases; practical, production-focused full-stack training.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS (NEW) -->
+  <section id="certifications" class="band band-alt">
+    <h2>Certifications</h2>
+    <div class="certs-grid reveal">
+      <div class="cert-card">
+        <h3>Salesforce Certified Administrator</h3>
+        <p>Core org configuration, security, and user enablement.</p>
+      </div>
+      <div class="cert-card">
+        <h3>Salesforce Certified Platform App Builder</h3>
+        <p>Declarative data modeling, automation, and app design.</p>
+      </div>
+      <div class="cert-card">
+        <h3>Salesforce Certified Platform Developer I</h3>
+        <p>Apex, LWC, integration patterns, and testing.</p>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="band band-alt">
+  <section id="contact" class="band band">
     <h2>Let’s Connect</h2>
     <div class="card contact-card reveal">
       <p>I’m open to Salesforce development, technical leadership, and data migration engagements.</p>
@@ -192,6 +235,6 @@
     <p>© 2025 Stephen Wade | Salesforce Developer & Project Leader</p>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
