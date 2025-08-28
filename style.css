@@ -297,7 +297,9 @@ li{ margin-bottom: .4rem; }
   border-radius: 8px; box-shadow: var(--shadow-1);
 }
 
-/* === Education cards (match Employment look) === */
+/* =========================================================
+   Education
+   ========================================================= */
 .edu-header{
   display:flex;
   align-items:center;
@@ -312,7 +314,9 @@ li{ margin-bottom: .4rem; }
 }
 .edu-card p { margin-top: .25rem; }
 
-/* === Certifications grid === */
+/* =========================================================
+   Certifications
+   ========================================================= */
 .certs-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
